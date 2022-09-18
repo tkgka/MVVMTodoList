@@ -14,6 +14,9 @@
 		F9509DA128D73AD2000FD869 /* MVVMTodoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9509DA028D73AD2000FD869 /* MVVMTodoListTests.swift */; };
 		F9509DAB28D73AD2000FD869 /* MVVMTodoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9509DAA28D73AD2000FD869 /* MVVMTodoListUITests.swift */; };
 		F9509DAD28D73AD2000FD869 /* MVVMTodoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9509DAC28D73AD2000FD869 /* MVVMTodoListUITestsLaunchTests.swift */; };
+		F9509DBD28D73E3C000FD869 /* TodoListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9509DBC28D73E3C000FD869 /* TodoListModel.swift */; };
+		F9509DBF28D73E8C000FD869 /* item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9509DBE28D73E8C000FD869 /* item.swift */; };
+		F9509DC728D742D1000FD869 /* MVVMTodoListUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9509DC628D742D1000FD869 /* MVVMTodoListUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +28,13 @@
 			remoteInfo = MVVMTodoList;
 		};
 		F9509DA728D73AD2000FD869 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9509D8428D73ACF000FD869 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9509D8B28D73ACF000FD869;
+			remoteInfo = MVVMTodoList;
+		};
+		F9509DC828D742D1000FD869 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F9509D8428D73ACF000FD869 /* Project object */;
 			proxyType = 1;
@@ -44,6 +54,10 @@
 		F9509DA628D73AD2000FD869 /* MVVMTodoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTodoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9509DAA28D73AD2000FD869 /* MVVMTodoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTodoListUITests.swift; sourceTree = "<group>"; };
 		F9509DAC28D73AD2000FD869 /* MVVMTodoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTodoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9509DBC28D73E3C000FD869 /* TodoListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListModel.swift; sourceTree = "<group>"; };
+		F9509DBE28D73E8C000FD869 /* item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = item.swift; sourceTree = "<group>"; };
+		F9509DC428D742D1000FD869 /* MVVMTodoListUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTodoListUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9509DC628D742D1000FD869 /* MVVMTodoListUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTodoListUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9509DC128D742D1000FD869 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +98,7 @@
 				F9509D8E28D73ACF000FD869 /* MVVMTodoList */,
 				F9509D9F28D73AD2000FD869 /* MVVMTodoListTests */,
 				F9509DA928D73AD2000FD869 /* MVVMTodoListUITests */,
+				F9509DC528D742D1000FD869 /* MVVMTodoListUnitTests */,
 				F9509D8D28D73ACF000FD869 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +109,7 @@
 				F9509D8C28D73ACF000FD869 /* MVVMTodoList.app */,
 				F9509D9C28D73AD2000FD869 /* MVVMTodoListTests.xctest */,
 				F9509DA628D73AD2000FD869 /* MVVMTodoListUITests.xctest */,
+				F9509DC428D742D1000FD869 /* MVVMTodoListUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,7 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				F9509D8F28D73ACF000FD869 /* MVVMTodoListApp.swift */,
-				F9509D9128D73ACF000FD869 /* ContentView.swift */,
+				F9509DBB28D73E1A000FD869 /* ViewModel */,
+				F9509DBA28D73E09000FD869 /* Model */,
+				F9509DB928D73E03000FD869 /* View */,
 				F9509D9328D73AD1000FD869 /* Assets.xcassets */,
 				F9509D9528D73AD1000FD869 /* Preview Content */,
 			);
@@ -125,6 +150,38 @@
 				F9509DAC28D73AD2000FD869 /* MVVMTodoListUITestsLaunchTests.swift */,
 			);
 			path = MVVMTodoListUITests;
+			sourceTree = "<group>";
+		};
+		F9509DB928D73E03000FD869 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F9509D9128D73ACF000FD869 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F9509DBA28D73E09000FD869 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F9509DBE28D73E8C000FD869 /* item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9509DBB28D73E1A000FD869 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9509DBC28D73E3C000FD869 /* TodoListModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9509DC528D742D1000FD869 /* MVVMTodoListUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9509DC628D742D1000FD869 /* MVVMTodoListUnitTests.swift */,
+			);
+			path = MVVMTodoListUnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +240,24 @@
 			productReference = F9509DA628D73AD2000FD869 /* MVVMTodoListUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F9509DC328D742D1000FD869 /* MVVMTodoListUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9509DCA28D742D1000FD869 /* Build configuration list for PBXNativeTarget "MVVMTodoListUnitTests" */;
+			buildPhases = (
+				F9509DC028D742D1000FD869 /* Sources */,
+				F9509DC128D742D1000FD869 /* Frameworks */,
+				F9509DC228D742D1000FD869 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9509DC928D742D1000FD869 /* PBXTargetDependency */,
+			);
+			name = MVVMTodoListUnitTests;
+			productName = MVVMTodoListUnitTests;
+			productReference = F9509DC428D742D1000FD869 /* MVVMTodoListUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +279,10 @@
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = F9509D8B28D73ACF000FD869;
 					};
+					F9509DC328D742D1000FD869 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = F9509D8B28D73ACF000FD869;
+					};
 				};
 			};
 			buildConfigurationList = F9509D8728D73ACF000FD869 /* Build configuration list for PBXProject "MVVMTodoList" */;
@@ -222,6 +301,7 @@
 				F9509D8B28D73ACF000FD869 /* MVVMTodoList */,
 				F9509D9B28D73AD2000FD869 /* MVVMTodoListTests */,
 				F9509DA528D73AD2000FD869 /* MVVMTodoListUITests */,
+				F9509DC328D742D1000FD869 /* MVVMTodoListUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +330,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9509DC228D742D1000FD869 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,8 +344,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9509DBF28D73E8C000FD869 /* item.swift in Sources */,
 				F9509D9228D73ACF000FD869 /* ContentView.swift in Sources */,
 				F9509D9028D73ACF000FD869 /* MVVMTodoListApp.swift in Sources */,
+				F9509DBD28D73E3C000FD869 /* TodoListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +368,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F9509DC028D742D1000FD869 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9509DC728D742D1000FD869 /* MVVMTodoListUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +388,11 @@
 			isa = PBXTargetDependency;
 			target = F9509D8B28D73ACF000FD869 /* MVVMTodoList */;
 			targetProxy = F9509DA728D73AD2000FD869 /* PBXContainerItemProxy */;
+		};
+		F9509DC928D742D1000FD869 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9509D8B28D73ACF000FD869 /* MVVMTodoList */;
+			targetProxy = F9509DC828D742D1000FD869 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -543,6 +645,50 @@
 			};
 			name = Release;
 		};
+		F9509DCB28D742D1000FD869 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABL4JWM3PY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tkgka.MVVMTodoListUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVMTodoList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVMTodoList";
+			};
+			name = Debug;
+		};
+		F9509DCC28D742D1000FD869 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ABL4JWM3PY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tkgka.MVVMTodoListUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVMTodoList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MVVMTodoList";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -578,6 +724,15 @@
 			buildConfigurations = (
 				F9509DB728D73AD2000FD869 /* Debug */,
 				F9509DB828D73AD2000FD869 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9509DCA28D742D1000FD869 /* Build configuration list for PBXNativeTarget "MVVMTodoListUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9509DCB28D742D1000FD869 /* Debug */,
+				F9509DCC28D742D1000FD869 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

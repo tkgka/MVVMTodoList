@@ -19,18 +19,15 @@ final class MVVMTodoListTests: XCTestCase {
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        let manager = TodoManager.emptyState()
+        XCTAssertTrue(manager.datas.count == 0, "Start with empty list")
+        
+        manager.addData(value: "123")
+        manager.addData(value: "456")
+        XCTAssertTrue(manager.datas.count == 2, "Count : 2")
+        
+        manager.deleteData(at: IndexSet(0...0))
+        XCTAssertTrue(manager.datas.count == 1, "delete added data once (1 data left)")
     }
 
 }

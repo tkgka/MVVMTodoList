@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct MVVMTodoListApp: App {
+    @StateObject var TodoViewManager = TodoManager()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(todoManager: TodoViewManager)
         }
     }
 }
